@@ -4,7 +4,11 @@
 
 <table>
   <tr>
-    <th>Name</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Country</th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,7 +16,11 @@
 
 <% @emps.each do |emp| %>
   <tr>
-    <td><%= emp.name %></td>
+    <td><%= emp.firstname %></td>
+    <td><%= emp.lastname %></td>
+    <td><%= emp.address %></td>
+    <td><%= emp.city %></td>
+    <td><%= emp.country %></td>
     <td><%= link_to 'Show', emp %></td>
     <td><%= link_to 'Edit', edit_emp_path(emp) %></td>
     <td><%= link_to 'Destroy', emp, confirm: 'Are you sure?', method: :delete %></td>

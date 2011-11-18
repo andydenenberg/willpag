@@ -12,8 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.label :firstname %>
+    <%= f.text_field :firstname %><br />
+    <%= f.label :lastname %>
+    <%= f.text_field :lastname %><br />
+    <%= f.label :address %>
+    <%= f.text_field :address %><br />
+    <%= f.label :city %>
+    <%= f.text_field :city %><br />
+    <%= f.label :country %>
+    <%= f.text_field :country %><br />
   </div>
   <div class="actions">
     <%= f.submit %>
