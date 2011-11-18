@@ -17,7 +17,9 @@
 	  <%= render 'devise/menu/login_items' %>
 	</ul>
 	
-<%= yield %>
-
+	<%= yield :head %>
+	<%= yield %>
+	<%= yield :scripts %>
+	
 </body>
 </html>
