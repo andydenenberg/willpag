@@ -6,7 +6,7 @@
  *= require_tree . 
 */
 
- *= require 'gmaps4rails'
+ * 'require gmaps4rails'
 
 ul.hmenu {
   list-style: none;	
