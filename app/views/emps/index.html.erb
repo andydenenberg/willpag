@@ -8,7 +8,7 @@
     <th>LastName</th>
     <th>Address</th>
     <th>City</th>
-    <th>Country</th>
+    <th>Photo</th>
     <th></th>
     <th></th>
     <th></th>
@@ -20,7 +20,7 @@
     <td><%= emp.lastname %></td>
     <td><%= emp.address %></td>
     <td><%= emp.city %></td>
-    <td><%= emp.country %></td>
+    <td><%= image_tag emp.photo.url(:tiny) %></td>
     <td><%= link_to 'Show', emp %></td>
     <td><%= link_to 'Edit', edit_emp_path(emp) %></td>
     <td><%= link_to 'Destroy', emp, confirm: 'Are you sure?', method: :delete %></td>
