@@ -13,6 +13,8 @@ gem 'will_paginate'
 
 gem 'devise'
 
+require 'yaml'
+
 # added the following to make work on Heroku
 gem 'therubyracer-heroku', :group => :production
 group :production do
