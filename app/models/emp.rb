@@ -12,7 +12,7 @@ class Emp < ActiveRecord::Base
     :storage => :s3 ,
     :bucket => 'andys_paperclip' ,
     :s3_credentials => {
-      :access_key_id =>  ENV['S3_KEY'] # || config['access_key_id'] ,
+      :access_key_id =>  ENV['S3_KEY'] , # || config['access_key_id'] ,  WATCHOUT for THE COMMA
       :secret_access_key =>  ENV['S3_SECRET'] # || config['secret_access_key']
     } ,
     :styles => {
